@@ -1,0 +1,28 @@
+{
+  "name": "ntunhsatm",
+  "version": "1.0.0",
+  "description": "create a HTTP Server to demostrate an ATM database",
+  "main": "server.js",
+  "scripts": {
+    "build": "node ./app/server.js"
+  },
+  "keywords": [
+    "Database",
+    "NTUNHS"
+  ],
+  "author": "C.Y. Lien",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^2.6.1",
+    "clean": "^4.0.2",
+    "cookie-parser": "^1.4.4",
+    "ejs": "^2.6.1",
+    "express": "^4.17.0",
+    "express-session": "^1.16.1",
+    "fs": "0.0.1-security",
+    "moment": "^2.23.0",
+    "mssql": "^4.3.0",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0"
+  }
+}
