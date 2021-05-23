@@ -24,7 +24,7 @@ CREATE TABLE Customer
   City varchar(20),
   Country varchar(50),
   UP_Date datetime,
-  UP_User int,
+  UP_User varchar(20)
   PRIMARY KEY (ID)
 )
 GO
@@ -53,7 +53,7 @@ CREATE TABLE Account
   BranchID int,
   AccType varchar(3),
   UP_Date datetime,
-  UP_User int,
+  UP_User varchar(20)
 )
 GO
 
@@ -74,7 +74,7 @@ CREATE TABLE Trans
   TranType varchar(3),
   TranNote varchar(100),
   UP_DATETIME datetime,
-  UP_USR int
+  UP_USR varchar(20)
 )
 GO
 

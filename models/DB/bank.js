@@ -8,6 +8,8 @@ function ExecSQL(SqlStr, Config, Acallback) {
             Acallback(err, "");
         }
         var request = new msSql.Request();
+        console.log("===========SQL Statement ===========");
+        console.log(SqlStr + '\r\n');
         request.query(SqlStr, function (err, rsp) {
             msSql.close();
             if (err) {

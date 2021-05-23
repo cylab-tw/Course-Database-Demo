@@ -78,8 +78,6 @@ module.exports = function (app, passport) {
 };
 
 function isLoggedIn(req, res, next) {
-    console.log("H");
-    console.log(req.isAuthenticated());
     if (req.isAuthenticated()) {
         return next();
     }
