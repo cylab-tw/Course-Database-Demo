@@ -1,5 +1,5 @@
 # Course-Database-Demo
-此專案為國立台北護理健康大學資訊管理系大二資料庫管理系統課程範例程式
+* 此專案為國立臺北護理健康大學資訊管理系大二資料庫管理系統課程範例程式
 
 ## 執行
 1. 安裝MS-SQL
@@ -31,16 +31,30 @@
 2. 下載node.js，此使用版本為 v10.15.1
 3. clone source & 初始化程式
 ```
-git clone https://github.com/cylab-tw/
-Course-Database-Demo.git
+git clone https://github.com/cylab-tw/Course-Database-Demo.git
 npm install
 
 ```
 
 4.  執行
+ - (1) 使用nod.js開啟
 ```
 cd/app
 node server.js
+```
+
+- (2) 使用pm2開啟(需先下載pm2)
+
+- 啟動
+```
+cd/app
+pm2 start server.js
+```
+
+- 刪除
+```
+cd/app
+pm2 kill
 ```
 
 5. 開啟網頁
