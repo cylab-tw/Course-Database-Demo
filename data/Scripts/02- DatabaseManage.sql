@@ -8,8 +8,8 @@ ON PRIMARY
   ( NAME='BANK_Primary',
     FILENAME=
        'D:\MSSQL_DB\Bank_Prm.mdf',
-    SIZE=4MB,
-    MAXSIZE=10MB,
+    SIZE=24MB,
+    MAXSIZE=64MB,
     FILEGROWTH=1MB)
 FOR ATTACH;
 
@@ -45,27 +45,27 @@ ON PRIMARY
   ( NAME='BANK_Primary',
     FILENAME=
        'D:\MSSQL_DB\Bank_Prm.mdf',
-    SIZE=4MB,
-    MAXSIZE=10MB,
+    SIZE=24MB,
+    MAXSIZE=64MB,
     FILEGROWTH=1MB),
 FILEGROUP Bank_FG1
   ( NAME = 'Bank_FG1_Dat1',
     FILENAME =
        'D:\MSSQL_DB\MyDB_FG1_1.ndf',
-    SIZE = 1MB,
-    MAXSIZE=10MB,
+    SIZE=24MB,
+    MAXSIZE=64MB,
     FILEGROWTH=1MB),
   ( NAME = 'Bank_FG1_Dat2',
     FILENAME =
         'D:\MSSQL_DB\MyDB_FG1_2.ndf',
-    SIZE = 1MB,
-    MAXSIZE=10MB,
+    SIZE=24MB,
+    MAXSIZE=64MB,
     FILEGROWTH=1MB)
 LOG ON
   ( NAME='BANK_log',
     FILENAME =
         'D:\MSSQL_DB\BANK.ldf',
-    SIZE=1MB,
-    MAXSIZE=10MB,
+    SIZE=24MB,
+    MAXSIZE=64MB,
     FILEGROWTH=1MB);
 GO
