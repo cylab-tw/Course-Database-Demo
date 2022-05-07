@@ -1,6 +1,8 @@
 # Course-Database-Demo
 * 此專案為國立臺北護理健康大學資訊管理系大二資料庫管理系統課程範例程式
 
+* 教學說明影片: https://www.youtube.com/watch?v=WJTRE3RXABc
+
 ## 執行
 1. 安裝MS-SQL
  - 設定MS-SQL登入帳號與密碼，請至`data/config.js`設定
